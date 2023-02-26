@@ -1709,7 +1709,7 @@ html {
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgb(30 41 59) rgb(56 189 248);
+  scrollbar-color: rgb(56 189 248) rgb(30 41 59);
 }
 
 /* Chrome, Edge, and Safari */
@@ -1719,14 +1719,14 @@ html {
 }
 
 *::-webkit-scrollbar-track {
-  background: rgb(56 189 248);
+  background: rgb(30 41 59);
   border-radius: 5px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(30 41 59);
+  background-color: rgb(56 189 248);
   border-radius: 14px;
-  border: 3px solid rgb(56 189 248);
+  border: 3px solid rgb(30 41 59);
 }
 
 .container {
@@ -8784,8 +8784,8 @@ html {
   width: 2rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-80 {
+  width: 20rem;
 }
 
 .w-\[70\%\] {
@@ -8885,6 +8885,10 @@ html {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {
@@ -11368,16 +11372,16 @@ html {
     position: relative;
   }
 
+  .lg\:-right-\[0\] {
+    right: 0;
+  }
+
   .lg\:bottom-0 {
     bottom: 0px;
   }
 
   .lg\:bottom-40 {
     bottom: 10rem;
-  }
-
-  .lg\:left-\[30rem\] {
-    left: 30rem;
   }
 
   .lg\:mb-10 {
@@ -11470,6 +11474,10 @@ html {
     padding-right: 1.5rem;
   }
 
+  .lg\:pl-96 {
+    padding-left: 24rem;
+  }
+
   .lg\:pt-20 {
     padding-top: 5rem;
   }
@@ -11507,8 +11515,8 @@ html {
     position: relative;
   }
 
-  .xl\:-right-\[80\%\] {
-    right: -80%;
+  .xl\:-right-\[60\%\] {
+    right: -60%;
   }
 
   .xl\:bottom-0 {
@@ -11547,6 +11555,10 @@ html {
     align-items: center;
   }
 
+  .xl\:p-0 {
+    padding: 0px;
+  }
+
   .xl\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -11570,8 +11582,8 @@ html {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:-right-\[50\%\] {
-    right: -50%;
+  .\32xl\:-right-\[40\%\] {
+    right: -40%;
   }
 
   .\32xl\:bottom-0 {
