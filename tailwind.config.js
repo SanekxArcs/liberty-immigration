@@ -3,7 +3,7 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
-      sans: ['Montserrat', 'sans-serif'],
+      sans: ["Montserrat", "sans-serif"],
     },
     screens: {
       sm: "320px",
@@ -22,10 +22,11 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
-      screens: {
-        375: "376px",
-        425: "426px",
-      },
+      // screens: {
+      //   d: "376px",
+      //   425: "426px",
+      //   1920: "1920px",
+      // },
     },
     container: {
       center: true,

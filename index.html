@@ -247,19 +247,19 @@
 
 
   <!-- HERO -->
-  <section  class="relative h-screen bg-gradient-to-r from-slate-900 to-slate-700 text-slate-100 snap-start">
+  <section  class="relative ">
     <div class="container">
-      <div class="flex flex-col items-start h-screen justify-top lg:px-10">
-        <div>
-          <h1 class="z-10 pt-10 pb-4 text-6xl font-bold md:pt-32 md:text-9xl text-start">
+      <div class="z-10 flex flex-col items-start xl:h-screen justify-top lg:px-10">
+        <div class="z-10">
+          <h1 class="pt-10 pb-4 text-6xl font-bold xl:pt-32 md:text-9xl text-start text-slate-100">
             Legalni w Polsce
           </h1>
           <p
-            class="z-10 pb-20 text-lg uppercase text-start lg:text-justify lg:flex lg:justify-start lg:w-full lg:text-2xl font-extralight text-slate-400">
+            class="z-10 pb-6 text-lg uppercase text-start lg:text-justify lg:flex lg:justify-start lg:w-full lg:text-2xl font-extralight text-slate-400">
             Спростіть свій життєвий шлях у Польщі з нашою допомогою в легалізації!
           </p>
         </div>
-        <p class="z-10 pb-10 text-base font-light lg:text-lg lg:pb-20 lg:w-1/2">
+        <p class="z-10 pb-3 text-base font-light lg:text-lg md:pb-10 xl:pb-20 lg:w-1/2">
           <span class="font-medium text-slate-200">
             Ми - команда професіоналів
           </span>
@@ -276,11 +276,11 @@
         </div>
       </div>
     </div>
-    <div class="absolute bottom-0 right-0 w-[70%] z-10 object-cover">
+    <div class="absolute md:-bottom-40 hidden md:block bottom-0 right-0 w-[70%] z-10 object-cover">
       <img src="./src-files/4155373.webp" alt="">
     </div>
     <div class="absolute top-0 left-0 right-0 z-[1] overflow-hidden -bottom-96">
-    <div class="absolute 2xl:bottom-40  xl:bottom-0 scale-[1.7] xl:-right-[80%] 2xl-right-[50%] object-cover">
+    <div class="absolute hidden lg:block lg:bottom-40 lg:left-[30rem] xl:0 2xl:bottom-40  xl:bottom-0 scale-[1.6] xl:-right-[80%] 2xl:-right-[50%] 3xl:-right-[50%] object-cover">
       <img src="./src-files/blob-haikei (2).svg" alt="">
     </div>
       </div>
@@ -288,7 +288,7 @@
   </section>
 
   <!-- ABOUT legalisation-->
-  <section class=" text-slate-50 lg:p-0" id="ABOUT">
+  <section class="pt-20 text-slate-50 lg:p-0" id="ABOUT">
     <div class="container z-10 flex flex-col items-center justify-center pb-10 md:pt-20">
       <h2 class="z-10 px-5 text-3xl font-bold text-center md:text-7xl">
         Етапи співпраці з нами:
@@ -342,7 +342,7 @@
         <div class="p-5 md:p-10">
           <h2 class="text-3xl font-bold md:text-7xl md:text-center xl:text-left ">Про нас
           </h2>
-          <div class="mt-2 mb-5 lg:mb-10 text-start">
+          <div class="mt-2 mb-5 lg:mb-10 text-start md:text-center">
             <span class="inline-block w-1 h-1 ml-1 rounded-full bg-slate-500"></span>
             <span class="inline-block w-3 h-1 ml-1 rounded-full bg-slate-500"></span>
             <span class="inline-block h-1 rounded-full w-44 lg:w-64 bg-slate-500"></span>
@@ -729,7 +729,7 @@
   </section>
 
   <!-- PARTNERS -->
-  <section class="hidden md:block" id="PARTNERS">
+  <section class="hidden px-5 md:block" id="PARTNERS">
     <div class="container flex flex-col items-center py-5 text-4xl font-light uppercase text-slate-200">
       <h2 class="">Фірми з якими співпрацюємо:</h2>
       <div class="mb-10 text-start">
@@ -983,19 +983,6 @@
   </div>
 </div>
 
-  <script >
-
-    // When the user clicks on the button, scroll to the top of the document
-    function goToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    var menu = document.getElementById('menu');
-    function toggleMenu() {
-      menu.classList.toggle('hidden');
-      menu.classList.toggle('w-full');
-      menu.classList.toggle('h-screen');
-    }
-    </script>
 </body>
 
 </html>
