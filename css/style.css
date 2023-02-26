@@ -8493,6 +8493,30 @@ html {
   bottom: 24rem;
 }
 
+.-right-\[70\%\] {
+  right: -70%;
+}
+
+.-bottom-\[10\%\] {
+  bottom: -10%;
+}
+
+.-bottom-\[30\%\] {
+  bottom: -30%;
+}
+
+.-bottom-40 {
+  bottom: -10rem;
+}
+
+.left-\[-17\%\] {
+  left: -17%;
+}
+
+.left-\[-23\%\] {
+  left: -23%;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -8515,6 +8539,10 @@ html {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-\[1\] {
+  z-index: 1;
 }
 
 .float-right {
@@ -11466,6 +11494,10 @@ html {
     height: 100vh;
   }
 
+  .lg\:h-32 {
+    height: 8rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -11569,6 +11601,30 @@ html {
     position: relative;
   }
 
+  .xl\:-right-\[60\%\] {
+    right: -60%;
+  }
+
+  .xl\:bottom-40 {
+    bottom: 10rem;
+  }
+
+  .xl\:-right-\[90\%\] {
+    right: -90%;
+  }
+
+  .xl\:-right-\[80\%\] {
+    right: -80%;
+  }
+
+  .xl\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .xl\:bottom-80 {
+    bottom: 20rem;
+  }
+
   .xl\:mb-0 {
     margin-bottom: 0px;
   }
@@ -11604,5 +11660,19 @@ html {
 
   .xl\:opacity-100 {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:-bottom-40 {
+    bottom: -10rem;
+  }
+
+  .\32xl\:bottom-40 {
+    bottom: 10rem;
+  }
+
+  .\32xl\:bottom-0 {
+    bottom: 0px;
   }
 }
