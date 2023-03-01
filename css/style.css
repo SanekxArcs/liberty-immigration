@@ -11419,6 +11419,11 @@ html {
     line-height: 2.5rem;
   }
 
+  .lg\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -11427,11 +11432,6 @@ html {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-9xl {
-    font-size: 8rem;
-    line-height: 1;
   }
 }
 
