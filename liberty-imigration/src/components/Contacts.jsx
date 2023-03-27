@@ -1,14 +1,25 @@
 import React from "react";
-
+import { useInView } from "react-intersection-observer";
 const Contacts = () => {
+  const { ref: contactRef, inView: contactIsVisible } = useInView({
+    threshold: 0,
+  });
+
   return (
     <>
       <section id="contacts" className="container mx-auto pb-32 text-gray-800">
         <div className="relative overflow-hidden ">?</div>
         <div className="container px-4 text-gray-800 md:px-12">
-          <div className="block rounded-xl bg-white/80 px-2 py-10 shadow-lg md:py-12 md:px-6">
-            <div className="flex flex-wrap">
-              <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 lg:px-6 xl:mb-0 xl:w-5/12">
+          <div className="block overflow-hidden rounded-xl bg-white/80 px-2 py-10 shadow-lg md:py-12 md:px-6">
+            <div
+              ref={contactRef}
+              className={`${
+                contactIsVisible ? "animate-fadeInDown animate-delay-500" : ""
+              } flex flex-wrap `}
+            >
+              <div
+                className={`mb-12 w-full shrink-0 grow-0 basis-auto px-3 lg:px-6 xl:mb-0 xl:w-5/12`}
+              >
                 <form name="contact" method="POST" data-netlify="true">
                   <div className="form-group mb-6">
                     <h3 className="pb-5 text-center text-3xl font-bold text-slate-800 md:text-left lg:text-4xl">
@@ -87,7 +98,7 @@ const Contacts = () => {
                   </div>
                   <div className="mb-12 w-full shrink-0 grow-0 basis-auto px-3 md:w-6/12 lg:px-6">
                     <div className="flex items-start">
-                      <a href="#">
+                      <a href="https://www.instagram.com/liberty-immigration/">
                         <div className="shrink-0">
                           <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-sky-600 p-4 shadow-md hover:bg-sky-400">
                             <svg
@@ -116,7 +127,9 @@ const Contacts = () => {
                       <div className="ml-6 grow">
                         <p className="mb-1 font-bold">Наш Instagram:</p>
                         <p className="text-gray-500">
-                          <a href="#">@liberty-im</a>
+                          <a href="https://www.instagram.com/liberty-immigration/">
+                            @liberty-im
+                          </a>
                         </p>
                       </div>
                     </div>

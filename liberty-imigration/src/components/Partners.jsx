@@ -15,40 +15,32 @@ export default function Partners() {
           </div>
           <div className="flex justify-between gap-10 py-10">
             <div>
-              <a href="#">
-                <img
-                  className="h-10 transition-all hover:scale-110"
-                  src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a395a12aaf3_logo-01.svg"
-                  alt=""
-                />
-              </a>
+              <img
+                className="h-10 transition-all hover:scale-110"
+                src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a395a12aaf3_logo-01.svg"
+                alt=""
+              />
             </div>
             <div>
-              <a href="#">
-                <img
-                  className="h-10 transition-all hover:scale-110"
-                  src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a411512aaf4_logo-04.svg"
-                  alt=""
-                />
-              </a>
+              <img
+                className="h-10 transition-all hover:scale-110"
+                src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a411512aaf4_logo-04.svg"
+                alt=""
+              />
             </div>
             <div>
-              <a href="#">
-                <img
-                  className="h-10 transition-all hover:scale-110"
-                  src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a3cd712aaf6_logo-05.svg"
-                  alt=""
-                />
-              </a>
+              <img
+                className="h-10 transition-all hover:scale-110"
+                src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a3cd712aaf6_logo-05.svg"
+                alt=""
+              />
             </div>
             <div>
-              <a href="#">
-                <img
-                  className="h-10 transition-all hover:scale-110"
-                  src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a85fd12aaf5_logo-08.svg"
-                  alt=""
-                />
-              </a>
+              <img
+                className="h-10 transition-all hover:scale-110"
+                src="https://uploads-ssl.webflow.com/62434fa732124a0fb112aab4/62434fa732124a85fd12aaf5_logo-08.svg"
+                alt=""
+              />
             </div>
           </div>
         </div>

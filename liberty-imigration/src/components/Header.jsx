@@ -138,7 +138,7 @@ export default function Header() {
 
               <ul
                 className={`${
-                  isOpen ? "hidden" : "absolute"
+                  isOpen ? "hidden" : "absolute animate-zoomIn"
                 } top-12 right-0 rounded-xl bg-slate-600 p-2 shadow-lg`}
               >
                 <li className="w-full rounded-xl p-2 text-sm transition-all duration-300 hover:scale-110 hover:bg-slate-400">
@@ -158,15 +158,31 @@ export default function Header() {
             <div className="relative lg:hidden">
               <button
                 onClick={onClickHandleMenu}
-                className="flex flex-col justify-between gap-1 rounded-lg bg-slate-600 p-2.5"
+                className="flex h-10 flex-col justify-between gap-1 rounded-lg bg-slate-600 p-2.5 transition-all duration-300 hover:scale-110 hover:bg-slate-500"
               >
-                <span className="h-1 w-5 rounded-full bg-white"></span>
-                <span className="h-1 w-5 rounded-full bg-white"></span>
-                <span className="h-1 w-5 rounded-full bg-white"></span>
+                <span
+                  className={`${
+                    isOpenMenu
+                      ? " translate-y-0 rotate-0"
+                      : "translate-y-2.5 rotate-45 "
+                  } h-0.5 w-5 rounded-full bg-white transition-transform`}
+                ></span>
+                <span
+                  className={`${
+                    isOpenMenu ? " opacity-100" : " opacity-0 "
+                  } h-0.5 w-5 rounded-full bg-white transition-opacity duration-150`}
+                ></span>
+                <span
+                  className={`${
+                    isOpenMenu
+                      ? " translate-y-0 rotate-0"
+                      : "-translate-y-2 -rotate-45"
+                  } h-0.5 w-5 rounded-full bg-white transition-transform`}
+                ></span>
               </button>
               <ul
                 className={`${
-                  isOpenMenu ? "hidden" : "absolute"
+                  isOpenMenu ? "hidden" : "absolute animate-zoomIn"
                 } right-0 top-12 rounded-lg bg-slate-600 p-2 shadow-lg`}
               >
                 <ul className="flex flex-col items-center justify-around gap-2 fill-white px-2 font-medium">

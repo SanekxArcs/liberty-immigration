@@ -5,7 +5,30 @@ import faceImage3 from "../resourses/face-review-3.svg";
 import faceImage4 from "../resourses/face-review-4.svg";
 import blob from "../resourses/blob-haikei.svg";
 
+import { useInView } from "react-intersection-observer";
+
 export default function Reviews() {
+  const { ref: h2s5Ref1, inView: h2s5IsVisible1 } = useInView({
+    threshold: 0,
+  });
+  const { ref: reviewRef1, inView: reviewIsVisible1 } = useInView({
+    threshold: 0,
+  });
+  const { ref: reviewRef2, inView: reviewIsVisible2 } = useInView({
+    threshold: 0,
+  });
+  const { ref: reviewRef3, inView: reviewIsVisible3 } = useInView({
+    threshold: 0,
+  });
+  const { ref: reviewRef4, inView: reviewIsVisible4 } = useInView({
+    threshold: 0,
+  });
+  const { ref: reviewRef5, inView: reviewIsVisible5 } = useInView({
+    threshold: 0,
+  });
+  const { ref: reviewRef6, inView: reviewIsVisible6 } = useInView({
+    threshold: 0,
+  });
   return (
     <>
       <section className="relative" id="REVIEWS">
@@ -13,7 +36,12 @@ export default function Reviews() {
           <div className="px-5 py-16 text-gray-800 md:py-24">
             <div className="mx-auto max-w-6xl">
               <div className="mx-auto text-center ">
-                <h2 className="mb-5 text-3xl font-bold text-slate-100 md:text-6xl">
+                <h2
+                  ref={h2s5Ref1}
+                  className={`${
+                    h2s5IsVisible1 ? "animate-fadeIn lg:animate-delay-300" : ""
+                  }mb-5 text-3xl font-bold text-slate-100 md:text-6xl`}
+                >
                   Що кажуть про нас.
                 </h2>
                 <div className="mb-10 text-center">
@@ -27,7 +55,12 @@ export default function Reviews() {
 
               <div className="-mx-3 items-start md:flex">
                 <div className="px-3 md:w-1/3">
-                  <div className="mx-auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800">
+                  <div
+                    ref={reviewRef1}
+                    className={`${
+                      reviewIsVisible1 ? "animate-fadeInLeft" : ""
+                    } mx-auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800`}
+                  >
                     <div className="mb-4 flex w-full items-center">
                       <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-200 bg-gray-50">
                         <img src={faceImage3} alt="" />
@@ -52,7 +85,13 @@ export default function Reviews() {
                       </p>
                     </div>
                   </div>
-                  <div className="mx-auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800">
+
+                  <div
+                    ref={reviewRef2}
+                    className={`${
+                      reviewIsVisible2 ? "animate-fadeInLeft" : ""
+                    } mx -auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800`}
+                  >
                     <div className="mb-4 flex w-full items-center">
                       <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-200 bg-gray-50">
                         <img src={faceImage1} alt="" />
@@ -78,8 +117,14 @@ export default function Reviews() {
                     </div>
                   </div>
                 </div>
+
                 <div className="px-3 md:w-1/3">
-                  <div className="mx-auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800">
+                  <div
+                    ref={reviewRef3}
+                    className={`${
+                      reviewIsVisible3 ? "animate-fadeInLeft" : ""
+                    } mx -auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800`}
+                  >
                     <div className="mb-4 flex w-full items-center">
                       <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-200 bg-gray-50">
                         <img src={faceImage4} alt="" />
@@ -105,7 +150,13 @@ export default function Reviews() {
                       </p>
                     </div>
                   </div>
-                  <div className="mx-auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800">
+
+                  <div
+                    ref={reviewRef4}
+                    className={`${
+                      reviewIsVisible4 ? "animate-fadeInLeft" : ""
+                    } mx -auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800`}
+                  >
                     <div className="mb-4 flex w-full items-center">
                       <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-200 bg-gray-50">
                         <img src={faceImage2} alt="" />
@@ -131,8 +182,14 @@ export default function Reviews() {
                     </div>
                   </div>
                 </div>
+
                 <div className="px-3 md:w-1/3">
-                  <div className="mx-auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800">
+                  <div
+                    ref={reviewRef5}
+                    className={`${
+                      reviewIsVisible5 ? "animate-fadeInLeft" : ""
+                    } mx -auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800`}
+                  >
                     <div className="mb-4 flex w-full items-center">
                       <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-200 bg-gray-50">
                         <img src={faceImage4} alt="" />
@@ -157,7 +214,13 @@ export default function Reviews() {
                       </p>
                     </div>
                   </div>
-                  <div className="mx-auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800">
+
+                  <div
+                    ref={reviewRef6}
+                    className={`${
+                      reviewIsVisible6 ? "animate-fadeInLeft" : ""
+                    } mx -auto mb-6 w-full rounded-xl border border-gray-200 bg-white/80 p-5 font-light text-gray-800`}
+                  >
                     <div className="mb-4 flex w-full items-center">
                       <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-200 bg-gray-50">
                         <img src={faceImage1} alt="" />

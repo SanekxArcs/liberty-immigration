@@ -1,11 +1,33 @@
 import React from "react";
 
+import { useInView } from "react-intersection-observer";
+
 const Prices = () => {
+  const { ref: h2s6Ref1, inView: h2s6IsVisible1 } = useInView({
+    threshold: 0,
+  });
+  const { ref: priceCardRef1, inView: priceCardIsVisible1 } = useInView({
+    threshold: 0,
+  });
+  const { ref: priceCardRef2, inView: priceCardIsVisible2 } = useInView({
+    threshold: 0,
+  });
+  const { ref: priceCardRef3, inView: priceCardIsVisible3 } = useInView({
+    threshold: 0,
+  });
   return (
     <>
-      <section className="container mx-auto pb-10 md:pb-40" id="price">
+      <section
+        className="container mx-auto overflow-hidden pb-10 md:pb-40"
+        id="price"
+      >
         <div className="container ">
-          <h2 className="text-center text-3xl font-bold text-slate-100 md:text-6xl">
+          <h2
+            ref={h2s6Ref1}
+            className={`${
+              h2s6IsVisible1 ? "animate-fadeIn animate-delay-300" : ""
+            } text-center text-3xl font-bold text-slate-100 md:text-6xl`}
+          >
             Наші послуги
           </h2>
           <div className="mn-5 text-center lg:mt-5 lg:mb-10">
@@ -18,7 +40,14 @@ const Prices = () => {
 
           <div className="flex flex-col items-center justify-center gap-7 pt-10 lg:flex-row lg:items-stretch lg:gap-5">
             {/* <!-- CARD 1 --> */}
-            <div className="425:w-80 relative flex w-72 flex-col items-center justify-start overflow-hidden  rounded-xl bg-white/80 p-10 transition-all hover:-translate-y-2 hover:shadow-lg md:w-11/12 lg:w-[30%]  lg:justify-start">
+            <div
+              ref={priceCardRef1}
+              className={`${
+                priceCardIsVisible1
+                  ? "animate-fadeInLeft animate-delay-300"
+                  : ""
+              } 425:w-80 relative flex w-72 flex-col items-center justify-start overflow-hidden  rounded-xl bg-white/80 p-10 transition-all hover:-translate-y-2 hover:shadow-lg md:w-11/12 lg:w-[30%]  lg:justify-start`}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -74,7 +103,12 @@ const Prices = () => {
             </div>
 
             {/* <!-- CARD 2 --> */}
-            <div className="425:w-80 relative  flex w-72 flex-col content-center items-center justify-start overflow-hidden rounded-xl bg-white/80 p-10 transition-all hover:-translate-y-2 hover:shadow-lg md:w-11/12 lg:w-[30%]  lg:justify-start">
+            <div
+              ref={priceCardRef2}
+              className={`${
+                priceCardIsVisible2 ? "animate-fadeIn animate-delay-300" : ""
+              } 425:w-80 relative  flex w-72 flex-col content-center items-center justify-start overflow-hidden rounded-xl bg-white/80 p-10 transition-all hover:-translate-y-2 hover:shadow-lg md:w-11/12 lg:w-[30%]  lg:justify-start`}
+            >
               <svg
                 className="h-20 w-20 pb-2 text-slate-900"
                 viewBox="0 0 24 24"
@@ -169,7 +203,14 @@ const Prices = () => {
             </div>
 
             {/* <!-- CARD 3 --> */}
-            <div className="425:w-80  relative flex w-72  flex-col content-center items-center justify-start rounded-xl bg-white/80 p-10 transition-all hover:-translate-y-2 hover:shadow-lg md:w-11/12 lg:w-[30%]  lg:justify-start">
+            <div
+              ref={priceCardRef3}
+              className={`${
+                priceCardIsVisible3
+                  ? "animate-fadeInRight animate-delay-300"
+                  : ""
+              } 425:w-80  relative flex w-72  flex-col content-center items-center justify-start rounded-xl bg-white/80 p-10 transition-all hover:-translate-y-2 hover:shadow-lg md:w-11/12 lg:w-[30%]  lg:justify-start`}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -212,7 +253,7 @@ const Prices = () => {
             </div>
           </div>
           <div className="w-full">
-            <p className="pt-5 text-center text-sm leading-tight">
+            <p className="pt-5 text-center text-sm leading-tight text-slate-400">
               <span className="mr-1 text-lg font-bold italic leading-none text-gray-400">
                 *
               </span>

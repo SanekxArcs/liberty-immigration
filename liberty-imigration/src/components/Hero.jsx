@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import heroImg from "../resourses/hero-image.webp";
 import blob from "../resourses/blob-haikei.svg";
 

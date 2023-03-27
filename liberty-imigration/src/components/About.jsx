@@ -1,20 +1,36 @@
 import React from "react";
 import aboutUsImage from "../resourses/about-us-section-image.svg";
+import { useInView } from "react-intersection-observer";
 export default function About() {
+  const { ref: imageRef, inView: imageIsVisible } = useInView({
+    threshold: 0,
+  });
+  const { ref: bloc1Ref, inView: block1Visible } = useInView({
+    threshold: 0,
+  });
+
   return (
     <>
       <section
-        className="container relative mx-auto overflow-visible text-white md:relative"
+        className="container relative mx-auto overflow-hidden text-white md:relative"
         id="ABOUTus"
       >
         <div className="container">
           <div className="grid grid-rows-1 md:place-content-center md:gap-10 lg:h-screen xl:grid-cols-2 xl:items-center">
             <img
-              className="-z-50 h-full w-full bg-contain pb-5 md:absolute md:opacity-30 xl:relative xl:opacity-100"
+              ref={imageRef}
+              className={`${
+                imageIsVisible ? "animate-fadeInLeft animate-delay-300" : ""
+              }-z-50 h-full w-full bg-contain pb-5 md:absolute md:opacity-30 xl:relative xl:opacity-100`}
               src={aboutUsImage}
               alt=""
             />
-            <div className="p-5 md:p-10">
+            <div
+              ref={bloc1Ref}
+              className={`${
+                block1Visible ? "animate-fadeInRight animate-delay-500" : ""
+              }p-5 md:p-10`}
+            >
               <h2 className="text-3xl font-bold md:text-center md:text-7xl xl:text-left ">
                 Про нас
               </h2>

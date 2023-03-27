@@ -11,6 +11,9 @@ export default function Features() {
   const { ref: featuresRef1, inView: featuresIsVisible1 } = useInView({
     threshold: 0,
   });
+  const { ref: h2Ref1, inView: h2IsVisible1 } = useInView({
+    threshold: 0,
+  });
   const { ref: featuresRef2, inView: featuresIsVisible2 } = useInView({
     threshold: 0,
   });
@@ -28,7 +31,12 @@ export default function Features() {
         id="FEATURES"
       >
         <div className="container px-2">
-          <h2 className="z-10 pt-10 text-center text-3xl font-bold text-slate-100 md:text-6xl">
+          <h2
+            ref={h2Ref1}
+            className={`${
+              h2IsVisible1 ? "animate-fadeIn animate-delay-500" : ""
+            }z-10 pt-10 text-center text-3xl font-bold text-slate-100 md:text-6xl`}
+          >
             <span className="text-slate-200 xl:text-slate-700">Чому саме</span>{" "}
             <br className="md:text-xl lg:hidden" />
             "LIBERTY IMMIGRATION"
@@ -41,11 +49,11 @@ export default function Features() {
             <span className="ml-1 inline-block h-1 w-1 rounded-full bg-slate-500"></span>
           </div>
 
-          <div className="grid justify-items-start rounded-xl bg-slate-100/70 text-slate-900 md:grid-cols-2 md:grid-rows-2 md:gap-9 md:py-10 md:px-20">
+          <div className="grid justify-items-start overflow-hidden rounded-xl bg-slate-100/70 text-slate-900 md:grid-cols-2 md:grid-rows-2 md:gap-9 md:py-10 md:px-20">
             <div
               ref={featuresRef1}
               className={`${
-                featuresIsVisible1 ? "animate-fadeInUp" : ""
+                featuresIsVisible1 ? "animate-fadeInLeft " : ""
               } flex items-center justify-center`}
             >
               <img className="m-5 w-20" src={featureImage1} alt="" />
@@ -57,7 +65,9 @@ export default function Features() {
             <div
               ref={featuresRef2}
               className={`${
-                featuresIsVisible2 ? "animate-fadeInUp" : ""
+                featuresIsVisible2
+                  ? "animate-fadeInRight lg:animate-delay-300"
+                  : ""
               } flex items-center justify-center`}
             >
               <img className="m-5 w-20" src={featureImage4} alt="" />
@@ -69,7 +79,9 @@ export default function Features() {
             <div
               ref={featuresRef3}
               className={`${
-                featuresIsVisible3 ? "animate-fadeInUp" : ""
+                featuresIsVisible3
+                  ? "animate-fadeInLeft lg:animate-delay-500"
+                  : ""
               } flex items-center justify-center`}
             >
               <img className="m-5 w-20" src={featureImage3} alt="" />
@@ -81,7 +93,9 @@ export default function Features() {
             <div
               ref={featuresRef4}
               className={`${
-                featuresIsVisible4 ? "animate-fadeInUp" : ""
+                featuresIsVisible4
+                  ? "animate-fadeInRight lg:animate-delay-700"
+                  : ""
               } flex items-center justify-center`}
             >
               <img className="m-5 w-20" src={featureImage2} alt="" />
