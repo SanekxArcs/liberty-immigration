@@ -1,4 +1,5 @@
-# https://liberty-immigration.netlify.app
+# React, Multilanguage + animations: https://l-i.netlify.app
+# Simple html + tailwind css https://liberty-immigration.netlify.app
 
 
 # Legalni-w-Polsce
