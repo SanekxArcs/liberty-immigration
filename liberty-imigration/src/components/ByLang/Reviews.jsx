@@ -271,7 +271,7 @@ export default function Reviews() {
 
         <div className="pointer-events-none absolute left-0 right-0 -top-96 -bottom-96 overflow-hidden">
           <div className="absolute  bottom-0 -right-[40%] -z-10 lg:bottom-0">
-            <img src={blob} alt="" />
+            <img className="" src={blob} alt="" />
           </div>
         </div>
       </section>

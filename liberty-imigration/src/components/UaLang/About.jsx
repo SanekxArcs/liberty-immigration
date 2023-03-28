@@ -22,8 +22,8 @@ export default function About() {
               className={`${
                 imageIsVisible
                   ? "animate-fadeInLeft opacity-100 animate-delay-300"
-                  : " opacity-0"
-              } -z-50 h-full w-full bg-contain pb-5 transition-opacity  md:hidden xl:relative xl:opacity-100`}
+                  : "opacity-0"
+              } -z-50 h-full w-full bg-contain pb-5 transition-opacity  md:opacity-30 xl:relative xl:opacity-100`}
               src={aboutUsImage}
               alt=""
             />

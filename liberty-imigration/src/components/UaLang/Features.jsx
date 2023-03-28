@@ -27,7 +27,7 @@ export default function Features() {
     <div>
       {" "}
       <section
-        className="container relative mx-auto overflow-visible pt-10"
+        className="container relative pt-10 mx-auto overflow-visible"
         id="FEATURES"
       >
         <div className="container px-2">
@@ -42,14 +42,14 @@ export default function Features() {
             "LIBERTY IMMIGRATION"
           </h2>
           <div className="mt-5 mb-10 text-center">
-            <span className="ml-1 inline-block h-1 w-1 rounded-full bg-slate-500"></span>
-            <span className="ml-1 inline-block h-1 w-3 rounded-full bg-slate-500"></span>
-            <span className="inline-block h-1 w-40 rounded-full bg-slate-500"></span>
-            <span className="ml-1 inline-block h-1 w-3 rounded-full bg-slate-500"></span>
-            <span className="ml-1 inline-block h-1 w-1 rounded-full bg-slate-500"></span>
+            <span className="inline-block w-1 h-1 ml-1 rounded-full bg-slate-500"></span>
+            <span className="inline-block w-3 h-1 ml-1 rounded-full bg-slate-500"></span>
+            <span className="inline-block w-40 h-1 rounded-full bg-slate-500"></span>
+            <span className="inline-block w-3 h-1 ml-1 rounded-full bg-slate-500"></span>
+            <span className="inline-block w-1 h-1 ml-1 rounded-full bg-slate-500"></span>
           </div>
 
-          <div className="grid justify-items-start overflow-hidden rounded-xl bg-slate-100/70 text-slate-900 md:grid-cols-2 md:grid-rows-2 md:gap-9 md:py-10 md:px-20">
+          <div className="grid overflow-hidden justify-items-start rounded-xl bg-slate-100/70 text-slate-900 md:grid-cols-2 md:grid-rows-2 md:gap-9 md:py-10 md:px-20">
             <div
               ref={featuresRef1}
               className={`${
@@ -58,7 +58,7 @@ export default function Features() {
                   : " opacity-0"
               } flex items-center justify-center transition-opacity`}
             >
-              <img className="m-5 w-20" src={featureImage1} alt="" />
+              <img className="w-20 m-5" src={featureImage1} alt="" />
               <p className="text-base font-medium text-slate-900 md:text-2xl">
                 Індивідуальний підхід та прозорість умов
               </p>
@@ -72,7 +72,7 @@ export default function Features() {
                   : " opacity-0"
               } flex items-center justify-center transition-opacity`}
             >
-              <img className="m-5 w-20" src={featureImage4} alt="" />
+              <img className="w-20 m-5" src={featureImage4} alt="" />
               <p className="text-base font-medium text-slate-900 md:text-2xl">
                 Експертність та професіоналізм на всіх етапах роботи
               </p>
@@ -86,7 +86,7 @@ export default function Features() {
                   : " opacity-0"
               } flex items-center justify-center transition-opacity`}
             >
-              <img className="m-5 w-20" src={featureImage3} alt="" />
+              <img className="w-20 m-5" src={featureImage3} alt="" />
               <p className="text-base font-medium text-slate-900 md:text-2xl">
                 Гарантія якості послуг
               </p>
@@ -100,7 +100,7 @@ export default function Features() {
                   : " opacity-0"
               } flex items-center justify-center transition-opacity`}
             >
-              <img className="m-5 w-20" src={featureImage2} alt="" />
+              <img className="w-20 m-5" src={featureImage2} alt="" />
               <p className="text-base font-medium text-slate-900 md:text-2xl">
                 3-річний досвід у сфері легалізації перебування та імміграції
               </p>

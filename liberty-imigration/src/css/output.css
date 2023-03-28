@@ -1150,6 +1150,25 @@ video {
           animation: 1s both zoomIn;
 }
 
+@-webkit-keyframes pulse {
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+.animate-pulse {
+  -webkit-animation: 1s ease-in-out both pulse;
+          animation: 1s ease-in-out both pulse;
+}
+
 .list-disc {
   list-style-type: disc;
 }
