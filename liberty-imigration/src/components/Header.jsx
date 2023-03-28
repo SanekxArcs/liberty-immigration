@@ -25,7 +25,7 @@ export default function Header() {
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-0">
           <div className="ml-1 rounded-xl text-lg font-light transition-all duration-300 hover:scale-105 xl:ml-5">
             <a
-              href="https://liberty-immigration.netlify.app"
+              href="https://l-i.netlify.app"
               className="flex items-center justify-center gap-2 "
             >
               <svg

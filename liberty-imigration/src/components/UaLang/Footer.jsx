@@ -9,7 +9,7 @@ export default function Footer() {
             {/* <!-- Logo Here --> */}
             <div className="ml-1 transition-all duration-500 hover:scale-110 xl:ml-5">
               <a
-                href="https://liberty-immigration.netlify.app"
+                href="https://l-i.netlify.app"
                 className="flex items-start justify-center gap-1 rounded-xl text-lg font-light lg:items-center"
               >
                 <svg
