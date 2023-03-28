@@ -1,28 +1,19 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Header";
-import Hero from "./Hero";
-import Process from "./Process";
-import About from "./About";
-import Features from "./Features";
-import Reviews from "./Reviews";
-import Contacts from "./Contacts";
-import Partners from "./Partners";
-import Footer from "./Footer";
-import Prices from "./Prices";
+import UaLang from "./UaLang/UaLang";
+import ByLang from "./ByLang/ByLang";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Hero />
-      <Process />
-      <About />
-      <Features />
-      <Reviews />
-      <Prices />
-      <Contacts />
-      <Partners />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<UaLang />}></Route>
+        <Route path="/ua" element={<UaLang />}></Route>
+        <Route path="/by" element={<ByLang />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

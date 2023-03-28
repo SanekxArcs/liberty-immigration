@@ -1,5 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+import ua from "../resourses/ua.svg";
+// import pl from "../resourses/pl.svg";
+import by from "../resourses/by.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(true);
@@ -19,7 +24,10 @@ export default function Header() {
       <header className="sticky top-0 z-40 w-full animate-fadeInDown bg-gradient-to-r from-slate-900 to-slate-700 text-white drop-shadow-lg">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-0">
           <div className="ml-1 rounded-xl text-lg font-light transition-all duration-300 hover:scale-105 xl:ml-5">
-            <a href="/" className="flex items-center justify-center gap-2 ">
+            <a
+              href="https://liberty-immigration.netlify.app"
+              className="flex items-center justify-center gap-2 "
+            >
               <svg
                 className="h-12 w-12 fill-white"
                 viewBox="0 0 32 32"
@@ -86,7 +94,7 @@ export default function Header() {
                 {/* <!-- INSTAGRAM --> */}
                 <li className="">
                   <a
-                    href="/"
+                    href="https://www.instagram.com/liberty-immigration/"
                     className="flex items-center gap-1 rounded-xl px-2 py-1 text-sm transition-all duration-300 hover:scale-110 hover:bg-slate-600"
                   >
                     <svg
@@ -139,17 +147,26 @@ export default function Header() {
               <ul
                 className={`${
                   isOpen ? "hidden" : "absolute animate-zoomIn"
-                } top-12 right-0 rounded-xl bg-slate-600 p-2 shadow-lg`}
+                } top-12 right-0 flex flex-row gap-1 rounded-xl bg-slate-600 p-2 shadow-lg`}
               >
-                <li className="w-full rounded-xl p-2 text-sm transition-all duration-300 hover:scale-110 hover:bg-slate-400">
-                  <a href="/UA">UA</a>
+                <li className=" rounded-xl p-2 text-sm transition-all duration-300 hover:scale-110 hover:bg-slate-400">
+                  <NavLink exact to="/ua">
+                    <img className="h-6 w-6" src={ua} alt="Ukraine flag" />
+                    UA
+                  </NavLink>
                 </li>
-
-                <li className="w-full rounded-xl p-2 text-sm transition-all duration-300 hover:scale-110 hover:bg-slate-400">
-                  <a href="/PL">PL</a>
-                </li>
-                <li className="w-full rounded-xl p-2 text-sm transition-all duration-300 hover:scale-110 hover:bg-slate-400">
-                  <a href="/BY">BL</a>
+                {/* 
+                <li className="flex flex-row  gap-1 rounded-xl p-2 text-sm transition-all duration-300 hover:scale-110 hover:bg-slate-400">
+                <NavLink exact to="/pl ">
+                    <img className="h-6 w-6" src={pl} alt="Polish flag" />
+                    PL
+                  </NavLink>
+                </li> */}
+                <li className="flex flex-row  gap-1 rounded-xl p-2 text-sm transition-all duration-300 hover:scale-110 hover:bg-slate-400">
+                  <NavLink exact to="/by">
+                    <img className="h-6 w-6" src={by} alt="Belarusian flag" />
+                    BY
+                  </NavLink>
                 </li>
               </ul>
             </div>
